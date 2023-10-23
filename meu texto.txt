@@ -1,1 +1,91 @@
-Ola meu nome é kevin
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   meu texto.txt
+
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git commit -m "commit inicial"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@DESKTOP-SELR0GK.(none)')
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git config --global user.email "kevinalvestd2@gmail.com"
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git config --global user.name "kevin alves"
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git commit -m "commit inicial"
+[master (root-commit) b3130b8] commit inicial
+ 1 file changed, 1 insertion(+)
+ create mode 100644 meu texto.txt
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git remote add origin https://github.com/DevKevinA/portfolio
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ ^C
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/DevKevinA/portfolio/pull/new/master
+remote:
+To https://github.com/DevKevinA/portfolio
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ ^C
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$ ^C
+
+User@DESKTOP-SELR0GK MINGW64 ~/OneDrive/Área de Trabalho/projeto dev (master)
+$
